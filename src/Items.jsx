@@ -3,11 +3,11 @@ import {useFetchbill, useFetchamt} from './useFetch'
 
 
 function Items() {
-    const [item]=useFetchbill('http://127.0.0.1:5000/bill');
+    const [item]=useFetchbill('https://splitty-backend-aun1.onrender.com/bill');
 
     const[selected, setSelected]=useState([]);
 
-    const{amount, pur_item}=useFetchamt('http://127.0.0.1:5000/pay');
+    const{amount, pur_item}=useFetchamt('https://splitty-backend-aun1.onrender.com/pay');
 
     const SelectItem=(id)=>{
         setSelected( prev=>
@@ -51,5 +51,6 @@ function Items() {
 
   )
 }
+
 
 export default Items
