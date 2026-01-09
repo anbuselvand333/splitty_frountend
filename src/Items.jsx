@@ -40,11 +40,20 @@ function Items() {
             </ol>
 
             <h4>Total Amount: ₹{amount.amount}</h4>
-            <a href={amount.upi_link}
-               target="_blank" 
-               rel="noopener noreferrer" 
-               style="padding: 10px 20px; background: #28a745; color: white; text-decoration: none; border-radius: 5px;">
-               Pay link
+            <a
+                href={amount.upi_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                    padding: '10px 20px',
+                    background: '#28a745',
+                    color: 'white',
+                    textDecoration: 'none',
+                    borderRadius: '5px',
+                    display: 'inline-block'
+                }}
+                >
+                Pay 
             </a>
 
             <div className="text-center">
@@ -59,5 +68,6 @@ function Items() {
 
 
 export default Items
+
 
 
